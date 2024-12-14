@@ -1,3 +1,4 @@
+#Library Class
 class Library:
     book_list = []
 
@@ -5,7 +6,7 @@ class Library:
     def entry_book(cls, book):
         cls.book_list.append(book)
 
-
+#Book Class
 class Book:
     def __init__(self, book_id, title, author):
         self.__book_id = book_id
@@ -30,7 +31,7 @@ class Book:
 
     def view_book_info(self):
         availability_status = "Available" if self.__availability else "Not Available"
-        print(f"Book ID: {self.__book_id}\nTitle: {self.__title}\nAuthor: {self.__author}\nAvailability: {availability_status}")
+        print(f"Book ID: {self.__book_id}\nTitle: {self.__title}\n Author: {self.__author}\nAvailability: {availability_status}")
 
     def get_book_id(self):
         return self.__book_id
@@ -67,7 +68,7 @@ def return_book_by_id(book_id):
             return
     print("Invalid book ID.")
 
-
+#Menu System
 def main_menu():
     while True:
         print("\nMenu:")
