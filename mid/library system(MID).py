@@ -1,4 +1,3 @@
-#Library Class
 class Library:
     book_list = []
 
@@ -6,7 +5,6 @@ class Library:
     def entry_book(cls, book):
         cls.book_list.append(book)
 
-#Book Class
 class Book:
     def __init__(self, book_id, title, author):
         self.__book_id = book_id
@@ -68,7 +66,6 @@ def return_book_by_id(book_id):
             return
     print("Invalid book ID.")
 
-#Menu System
 def main_menu():
     while True:
         print("\nMenu:")
